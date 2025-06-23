@@ -1,0 +1,285 @@
+.reset, .sc-semester-card h1,
+.sc-semester-card h2,
+.sc-semester-card h3,
+.sc-semester-card h4,
+.sc-semester-card h5,
+.sc-semester-card h6 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  overflow: none;
+  min-height: 100vh;
+}
+@media all and (max-width: 1200px) {
+  main {
+    padding-inline: 1.25rem;
+  }
+}
+
+.sc-course-search {
+  margin: 2rem 0 5rem;
+  position: relative;
+}
+.sc-course-search::after {
+  --size: 100px;
+  content: "";
+  width: var(--size);
+  height: 1px;
+  position: absolute;
+  bottom: -2rem;
+  left: calc(50% - var(--size) / 2);
+  background: rgba(0, 0, 0, 0.25);
+}
+.sc-course-search-header {
+  text-align: center;
+}
+.sc-course-search .sc-semester-course-links {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background: #F5F5F5;
+  border-radius: 8px;
+}
+.sc-course-search .sc-semester-course-links h2 {
+  margin-block: 1rem;
+  font-size: 1.125rem;
+}
+.sc-course-search .sc-semester-course-links ul {
+  margin: 0 0 0rem;
+}
+.sc-course-search .sc-semester-course-links ul li {
+  border-bottom: 1px dotted #c1c1c1;
+  list-style: none;
+  padding: 4px 0 3px 0;
+  margin: 0px;
+}
+.sc-course-search .sc-semester-course-links ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+.sc-course-search .sc-semester-course-links.is-hidden {
+  display: none;
+}
+.sc-course-search-form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+@media all and (max-width: 768px) {
+  .sc-course-search-form {
+    flex-direction: column;
+  }
+}
+.sc-course-search-form select {
+  width: -moz-max-content;
+  width: max-content;
+}
+@media all and (max-width: 768px) {
+  .sc-course-search-form select {
+    width: 100%;
+  }
+}
+.sc-course-search-form .search {
+  --size: 1.125rem;
+  position: relative;
+  width: 100%;
+}
+.sc-course-search-form .search i {
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  left: 1rem;
+  font-size: var(--size);
+}
+.sc-course-search-form .search input[type=search] {
+  padding-left: calc(var(--size) + 1.5rem);
+  border-radius: 5px;
+}
+.sc-semester-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0 5rem;
+}
+.sc-semester-grid[data-columns="1"] {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media all and (max-width: 768px) {
+  .sc-semester-grid[data-columns="1"] {
+    grid-template-columns: 1fr;
+  }
+}
+.sc-semester-grid[data-columns="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media all and (max-width: 768px) {
+  .sc-semester-grid[data-columns="2"] {
+    grid-template-columns: 1fr;
+  }
+}
+.sc-semester-grid[data-columns="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media all and (max-width: 768px) {
+  .sc-semester-grid[data-columns="3"] {
+    grid-template-columns: 1fr;
+  }
+}
+.sc-semester-grid[data-columns="4"] {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media all and (max-width: 768px) {
+  .sc-semester-grid[data-columns="4"] {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (max-width: 768px) {
+  .sc-semester-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.sc-semester-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.sc-semester-card.active {
+  border: 1px solid #a8a8a8;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.sc-semester-card:hover {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.sc-semester-card:hover figure img {
+  transform: scale(1.5);
+}
+.sc-semester-card figure {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+}
+.sc-semester-card figure img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 25s ease-in-out;
+  transform: scale(1);
+}
+.sc-semester-card .dates {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.sc-semester-card .dates strong {
+  --spacing: 0.5rem;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+.sc-semester-card button {
+  width: 100%;
+}
+.sc-semester-card ul {
+  margin: 0 0 2rem;
+}
+.sc-semester-card ul li {
+  border-bottom: 1px dotted #c1c1c1;
+  list-style: none;
+  padding: 4px 0 3px 0;
+  margin: 0px;
+}
+.sc-semester-card ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+.sc-semester-card h2 {
+  margin-block: 1rem;
+  font-size: 1.125rem;
+}
+.sc-semester-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.sc-semester-card summary {
+  background: #f2f2f2;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.sc-semester-card .gb-accordion-text {
+  border-color: #f2f2f2;
+}
+.sc-semester-btn-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.25rem;
+  padding: 0 1rem 1.5rem;
+}
+.sc-semester-btn-grid a {
+  text-decoration: none;
+}
+.sc-semester-btn-grid a:hover {
+  text-decoration: underline;
+}
+.sc-semester-btn-grid a::after {
+  content: "\f0da";
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding-left: 4px;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+.tabs button {
+  flex: 1 1 auto;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  transition: all 0.4s ease;
+}
+.tabs button.active, .tabs button:hover {
+  background: rgba(0, 0, 0, 0.035);
+}
+.tabs button:focus {
+  outline: none;
+}
+.tabs button:focus-visible {
+  outline: 1px solid rgb(0, 40, 85);
+  outline-offset: -2px;
+}
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: rgb(253, 210, 110);
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}/*# sourceMappingURL=semester-cards.css.map */

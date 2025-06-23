@@ -1,0 +1,338 @@
+// -------------------------------------
+// semester-cards.scss
+// -------------------------------------
+//
+// SC Semester Cards
+//
+// ------------------------------------
+
+.reset {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  overflow: none;
+  min-height: 100vh;
+
+  @media all and (max-width: 1200px) {
+    padding-inline: 1.25rem;
+  }
+}
+
+//Schoolcraft Semester Search
+.sc {
+  &-course-search {
+    margin: 2rem 0 5rem;
+    position: relative;
+
+    &::after {
+      --size: 100px;
+      content: "";
+      width: var(--size);
+      height: 1px;
+      position: absolute;
+      bottom: -2rem;
+      left: calc(50% - (var(--size) / 2));
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+   &-header {
+      text-align: center;
+    }
+
+    .sc-semester-course-links {
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      background: #F5F5F5;
+      border-radius: 8px;
+      
+      h2 {
+        margin-block: 1rem;
+        font-size: 1.125rem;
+      }
+
+      ul {
+        margin: 0 0 0rem;
+
+        li {
+          border-bottom: 1px dotted #c1c1c1;
+          list-style: none;
+          padding: 4px 0 3px 0;
+          margin: 0px;
+
+          &:nth-last-child(1) {
+            border-bottom: none;
+          }
+        }
+      }
+      
+      &.is-hidden {
+         display: none; //Default
+      }
+    }
+  }
+
+  &-course-search-form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    @media all and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    select {
+      width: max-content;
+
+      @media all and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .search {
+      --size: 1.125rem;
+      position: relative;
+      width: 100%;
+
+      i {
+        position: absolute;
+        top: calc(50% - (var(--size) / 2));
+        left: 1rem;
+        font-size: var(--size);
+      }
+
+      input[type="search"] {
+        padding-left: calc(var(--size) + 1.5rem);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  //Grid & Cards
+  &-semester {
+
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 2rem 0 5rem;
+
+      &[data-columns="1"] {
+        grid-template-columns: repeat(1, 1fr);
+
+        @media all and (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &[data-columns="2"] {
+        grid-template-columns: repeat(2, 1fr);
+
+        @media all and (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &[data-columns="3"] {
+        grid-template-columns: repeat(3, 1fr);
+
+        @media all and (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      &[data-columns="4"] {
+        grid-template-columns: repeat(4, 1fr);
+
+        @media all and (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media all and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease-in-out;
+
+      &.active {
+        border: 1px solid darken(#e8e8e8, 25%);
+        // border: 1px solid #e9ab21;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      &:hover {
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+
+        figure img {
+          transform: scale(1.5);
+        }
+      }
+
+      figure {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        height: 150px;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+          transition: transform 25s ease-in-out;
+          transform: scale(1);
+        }
+      }
+
+      .dates {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.05);
+        padding: 1rem;
+        border-radius: 5px;
+
+        strong {
+          --spacing: 0.5rem;
+          display: block;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+          padding-bottom: var(--spacing);
+          margin-bottom: var(--spacing);
+        }
+      }
+
+      button {
+        width: 100%;
+      }
+
+      ul {
+        margin: 0 0 2rem;
+
+        li {
+          border-bottom: 1px dotted #c1c1c1;
+          list-style: none;
+          padding: 4px 0 3px 0;
+          margin: 0px;
+
+          &:nth-last-child(1) {
+            border-bottom: none;
+          }
+        }
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        @extend .reset;
+      }
+
+      h2 {
+        margin-block: 1rem;
+        font-size: 1.125rem;
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+      }
+
+      summary {
+        background: #f2f2f2;
+        padding: 10px 15px;
+        border-radius: 6px;
+      }
+
+      .gb-accordion-text {
+        border-color: #f2f2f2;
+      }
+    }
+
+    &-btn-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0.25rem;
+      padding: 0 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &::after {
+          content: "\f0da";
+          font-family: "Font Awesome 6 Free"; //Needs to be adjusted
+          font-size: 1.2rem;
+          font-weight: 900;
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #ddd;
+
+  button {
+    flex: 1 1 auto;
+    background: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    transition: all 0.4s ease;
+
+    &.active,
+    &:hover {
+      background: rgba(0, 0, 0, 0.035);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 1px solid rgb(0, 40, 85);
+      outline-offset: -2px;
+    }
+  }
+
+  .indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: rgb(253, 210, 110);
+    transition: left 0.3s ease, width 0.3s ease;
+  }
+}
+
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}

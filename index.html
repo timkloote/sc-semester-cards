@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schoolcraft Semester Cards</title>
+  <link rel="stylesheet" href="https://stgschoolcraft.wpengine.com/academics/wp-content/themes/sc-dept/style.css?ver=2022.9.221">
+  <link rel="stylesheet" href="https://stgschoolcraft.wpengine.com/academics/wp-content/plugins/genesis-page-builder/vendor/genesis/blocks/dist/style-blocks.build.css?ver=1742885922">
+  <link rel="stylesheet" href="css/semester-cards.css">
+  <script src="https://kit.fontawesome.com/6e104ddb68.js" crossorigin="anonymous"></script>
+  <script type="module" src="js/app.js" defer></script>
+</head>
+<body>
+
+<main>
+  
+  <!-- SC Course Search -->
+  <section class="sc-course-search">
+    <header class="sc-course-search-header">
+      <h1>Semester Information</h1>
+      <p><a href="https://www.schoolcraft.edu/advising/meet-with-an-advisor/">Meet with your academic advisor</a> for course selection guidance.</p>
+    </header>
+    <form class="sc-course-search-form" action="https://self-service.schoolcraft.edu/Student/Courses/Search" method="GET" target="_blank">
+      <select name="Terms" required>
+        <option value="">Select Semester</option>
+        <option value="2025/01">Winter 2025</option>
+        <option value="2025/02">Spring 2025</option>
+        <option value="2025/03">Summer 2025</option>
+        <option value="2025/04">Fall 2025</option>
+      </select>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="search" name="keyword" placeholder="Search courses..." required>
+      </div>
+      <input type="hidden" name="SearchResultsView" value="1">
+      <button type="submit">Search</button>
+    </form>
+      <div class="sc-semester-course-links is-hidden" id="courseLinksContainer-winter-2025">
+        <h2>Winter 2025 Course Search Links</h2>
+        <div class="wp-block-genesis-blocks-gb-columns gb-layout-columns-3 gb-3-col-equal">
+        <div class="gb-layout-column-wrap gb-block-layout-column-gap-2 gb-is-responsive-column">
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Courses</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;SearchResultsView=1">All Winter Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;StartDate=01/31/2025&amp;SearchResultsView=1">Late-Starting Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=GIS&amp;TopicCodes=GL&amp;TopicCodes=GLI&amp;TopicCodes=GS&amp;SearchResultsView=1">Global Learning</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=SIG&amp;&amp;TopicCodes=SL&amp;&amp;TopicCodes=SLI&amp;&amp;TopicCodes=GIS&amp;&amp;TopicCodes=GS&amp;SearchResultsView=1">Service Learning</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Format:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://www.schoolcraft.edu/registration/course-formats/">Course Formats</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=HYBMC&amp;SearchResultsView=1">Hybrid MC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=ONL&amp;SearchResultsView=1">Online</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=SYNC&amp;SearchResultsView=1">SYNC Remote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Location:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MC&amp;SearchResultsView=1">Livonia Main Campus</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MEC&amp;SearchResultsView=1">MEC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=PSTC&amp;SearchResultsView=1">PSTC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="sc-semester-course-links is-hidden" id="courseLinksContainer-spring-2025">
+        <h2>Spring 2025 Course Search Links</h2>
+        <div class="wp-block-genesis-blocks-gb-columns gb-layout-columns-3 gb-3-col-equal">
+        <div class="gb-layout-column-wrap gb-block-layout-column-gap-2 gb-is-responsive-column">
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Courses</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;SearchResultsView=1">All Winter Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;StartDate=01/31/2025&amp;SearchResultsView=1">Late-Starting Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=GIS&amp;TopicCodes=GL&amp;TopicCodes=GLI&amp;TopicCodes=GS&amp;SearchResultsView=1">Global Learning</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=SIG&amp;&amp;TopicCodes=SL&amp;&amp;TopicCodes=SLI&amp;&amp;TopicCodes=GIS&amp;&amp;TopicCodes=GS&amp;SearchResultsView=1">Service Learning</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Format:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://www.schoolcraft.edu/registration/course-formats/">Course Formats</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=HYBMC&amp;SearchResultsView=1">Hybrid MC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=ONL&amp;SearchResultsView=1">Online</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=SYNC&amp;SearchResultsView=1">SYNC Remote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Location:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MC&amp;SearchResultsView=1">Livonia Main Campus</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MEC&amp;SearchResultsView=1">MEC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=PSTC&amp;SearchResultsView=1">PSTC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="sc-semester-course-links is-hidden" id="courseLinksContainer-summer-2025">
+        <h2>Summer 2025 Course Search Links</h2>
+                <div class="wp-block-genesis-blocks-gb-columns gb-layout-columns-3 gb-3-col-equal">
+        <div class="gb-layout-column-wrap gb-block-layout-column-gap-2 gb-is-responsive-column">
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Courses</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;SearchResultsView=1">All Winter Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;StartDate=01/31/2025&amp;SearchResultsView=1">Late-Starting Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=GIS&amp;TopicCodes=GL&amp;TopicCodes=GLI&amp;TopicCodes=GS&amp;SearchResultsView=1">Global Learning</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=SIG&amp;&amp;TopicCodes=SL&amp;&amp;TopicCodes=SLI&amp;&amp;TopicCodes=GIS&amp;&amp;TopicCodes=GS&amp;SearchResultsView=1">Service Learning</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Format:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://www.schoolcraft.edu/registration/course-formats/">Course Formats</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=HYBMC&amp;SearchResultsView=1">Hybrid MC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=ONL&amp;SearchResultsView=1">Online</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=SYNC&amp;SearchResultsView=1">SYNC Remote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Location:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MC&amp;SearchResultsView=1">Livonia Main Campus</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MEC&amp;SearchResultsView=1">MEC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=PSTC&amp;SearchResultsView=1">PSTC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="sc-semester-course-links is-hidden" id="courseLinksContainer-fall-2025">
+        <h2>Fall 2025 Course Search Links</h2>
+                <div class="wp-block-genesis-blocks-gb-columns gb-layout-columns-3 gb-3-col-equal">
+        <div class="gb-layout-column-wrap gb-block-layout-column-gap-2 gb-is-responsive-column">
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Courses</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;SearchResultsView=1">All Winter Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;StartDate=01/31/2025&amp;SearchResultsView=1">Late-Starting Courses</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=GIS&amp;TopicCodes=GL&amp;TopicCodes=GLI&amp;TopicCodes=GS&amp;SearchResultsView=1">Global Learning</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025%2F01&amp;TopicCodes=SIG&amp;&amp;TopicCodes=SL&amp;&amp;TopicCodes=SLI&amp;&amp;TopicCodes=GIS&amp;&amp;TopicCodes=GS&amp;SearchResultsView=1">Service Learning</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Format:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://www.schoolcraft.edu/registration/course-formats/">Course Formats</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=HYBMC&amp;SearchResultsView=1">Hybrid MC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=ONL&amp;SearchResultsView=1">Online</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=SYNC&amp;SearchResultsView=1">SYNC Remote</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="wp-block-genesis-blocks-gb-column section-list gb-block-layout-column">
+            <div class="gb-block-layout-column-inner">
+              <h2 class="wp-block-heading has-normal-font-size">Filter by Location:</h2>
+              <ul class="wp-block-list">
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MC&amp;SearchResultsView=1">Livonia Main Campus</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=MEC&amp;SearchResultsView=1">MEC</a>
+                </li>
+                <li>
+                  <a href="https://self-service.schoolcraft.edu/Student/Courses/Search?Terms=2025/01&amp;locations=PSTC&amp;SearchResultsView=1">PSTC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <!-- Schoolcraft Semester Grid -->
+  <section class="sc-semester-grid" data-columns="4">
+
+    <!-- Winter -->
+    <div class="sc-semester-card" data-semester="winter-2025" data-term="2025/01">
+      <figure>
+        <img loading="lazy" src="images/card-winter.jpg" alt="Winter 2025 on Campus">
+      </figure>
+      <h2>Winter 2025</h2>
+      <p class="dates"><strong>Registration Begins:<br> October 26, 2024</strong>First Day of Classes:<br> January 6, 2025</p>
+      <div class="wp-block-genesis-blocks-gb-column section-list registration-box gb-block-layout-column">
+        <div class="gb-block-layout-column-inner">
+          <h2 class="wp-block-heading has-normal-font-size">Registration</h2>
+          <ul class="wp-block-list">
+            <li>
+              <a href="https://www.schoolcraft.edu/registration/dates-and-guides/academic-dates/winter-academic-dates/">Academic Dates</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/ocelotaccess">Ocelot Access</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/registration/dates-and-guides/registration-guides/">Registration Guides</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/registration">Registration Office</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn-secondary view-links-btn" data-semester="winter-2025"><i class="fa-solid fa-magnifying-glass"></i> Course Search Links</button>
+    </div>
+
+    <!-- Spring -->
+    <div class="sc-semester-card" data-semester="spring-2025" data-term="2025/02">
+      <figure>
+        <img loading="lazy" src="images/card-spring.jpg" alt="Spring 2025 on Campus">
+      </figure>
+      <h2>Spring 2025</h2>
+      <p class="dates"><strong>Registration Begins:<br> March 29, 2025<br></strong>First Day of Classes:<br> May 5, 2025</p>
+      <div class="wp-block-genesis-blocks-gb-column section-list registration-box gb-block-layout-column">
+          <div class="gb-block-layout-column-inner">
+            <h2 class="wp-block-heading has-normal-font-size">Registration</h2>
+            <ul class="wp-block-list">
+              <li>
+                <a href="https://www.schoolcraft.edu/registration/dates-and-guides/academic-dates/spring-academic-dates/">Academic Dates</a>
+              </li>
+              <li>
+                <a href="https://www.schoolcraft.edu/ocelotaccess">Ocelot Access</a>
+              </li>
+              <li>
+                <a href="https://www.schoolcraft.edu/registration/dates-and-guides/registration-guides/">Registration Guides</a>
+              </li>
+              <li>
+                <a href="https://www.schoolcraft.edu/registration">Registration Office</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <button class="btn-secondary view-links-btn" data-semester="spring-2025"><i class="fa-solid fa-magnifying-glass"></i> Course Search Links</button>
+    </div>
+
+    <!-- Summer -->
+    <div class="sc-semester-card" data-semester="summer-2025" data-term="2025/03">
+      <figure>
+        <img loading="lazy" src="images/card-summer.jpg" alt="Summer 2025 on Campus">
+      </figure>
+      <h2>Summer 2025</h2>
+      <p class="dates"><strong>Registration Begins<br> March 29, 2025<br></strong>First Day of Classes:<br> June 30, 2025</p>
+      <div class="wp-block-genesis-blocks-gb-column section-list registration-box gb-block-layout-column">
+        <div class="gb-block-layout-column-inner">
+          <h2 class="wp-block-heading has-normal-font-size">Registration</h2>
+          <ul class="wp-block-list">
+            <li>
+              <a href="https://www.schoolcraft.edu/registration/dates-and-guides/academic-dates/summer-academic-dates/">Academic Dates</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/ocelotaccess">Ocelot Access</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/registration/dates-and-guides/registration-guides/">Registration Guides</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/registration">Registration Office</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn-secondary view-links-btn" data-semester="summer-2025"><i class="fa-solid fa-magnifying-glass"></i> Course Search Links</button>
+    </div>
+
+    <!-- Fall -->
+    <div class="sc-semester-card" data-semester="fall-2025" data-term="2025/04">
+      <figure>
+        <img loading="lazy" src="images/card-fall.jpg" alt="Fall 2025 on Campus">
+      </figure>
+      <h2>Fall 2025</h2>
+      <p class="dates"><strong>Registration Begins<br> March 29, 2025<br></strong>First Day of Classes:<br> Aug 25th, 2025</p>
+      <div class="wp-block-genesis-blocks-gb-column section-list registration-box gb-block-layout-column">
+        <div class="gb-block-layout-column-inner">
+          <h2 class="wp-block-heading has-normal-font-size">Registration</h2>
+          <ul class="wp-block-list">
+            <li>
+              <a href="https://www.schoolcraft.edu/registration/dates-and-guides/academic-dates/fall-academic-dates/">Academic Dates</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/ocelotaccess">Ocelot Access</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/registration/dates-and-guides/registration-guides/">Registration Guides</a>
+            </li>
+            <li>
+              <a href="https://www.schoolcraft.edu/registration">Registration Office</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn-secondary view-links-btn" data-semester="fall-2025"><i class="fa-solid fa-magnifying-glass"></i> Course Search Links</button>
+    </div>
+
+  </section>
+
+
+</main>
+  
+</body>
+</html>
